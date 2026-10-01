@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> login form</h1>
+    <form action="/submit" method="post">
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+        <label for="remember-me">Remember Me:</label>
+        <input type="checkbox" id="remember-me" name="remember-me"><br>
+        <input type="submit" value="Cancel">
+        <label for="forgot-password">Forgot Password?
+            <a href="#">Click here</a>
+        </label>
+    </form>
+</body>
+</html>

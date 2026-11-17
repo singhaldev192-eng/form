@@ -6,13 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         div {
-            height: 300px;
-            width: 600px;
+            height: 200px;
+            width: 200px;
             background-color: red;
             transition: height 2s, width 2s, background-color 2s;
-        }
+            transition-delay: 0.5s;
+            margin-top: 10px;
+            margin-left: 250px;
+            margin-bottom: 10px;
+           
 
+        }
+        #div1 {
+            transition-timing-function: linear;
+        }
+        #div2 {
+            transition-timing-function: ease;
+        }
+        #div3 {
+            transition-timing-function: ease-in;
+        }
+        #div4 {
+            transition-timing-function: ease-out;
+        }
+        #div5 {
+            transition-timing-function: ease-in-out;
+        }
+        #div6 {
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        }
         div:hover {
             height: 400px;
             width: 400px;
@@ -22,7 +49,12 @@
 </head>
 
 <body>
-    <div></div>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+    <div id="div6">cubic-bezier</div>
 </body>
 
 </html>
